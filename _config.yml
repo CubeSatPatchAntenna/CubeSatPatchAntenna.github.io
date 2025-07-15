@@ -20,7 +20,7 @@ author: Jordan Bona, Jonathan Boyce, Darius Clayton & Logan Dring
 ###############################################
 
 navbar-links:
-  About Me: "projectbackground"
+  Project Background: "projectbackground"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
