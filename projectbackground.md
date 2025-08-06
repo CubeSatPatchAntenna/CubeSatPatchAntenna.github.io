@@ -30,5 +30,3 @@ The S band patch antenna is to meet the electrical and mechanical success criter
 | EE-10  | The antenna shall have at least 6 dBi gain along its direction of maximum radiation, which shall be aligned with the boresight of the antenna. | Test | Anechoic chamber |
 | EE-11  | The axial ratio of the antenna within its half power beamwidth (HPWB) shall be at most 3 dB. | Analysis | Simulations of the axial ratio indicate that the requirement is met. |
 | EE-12  | The efficiency of the antenna shall be at least 90% or better over its frequency range of operation in EE-I. | Test | Analysis based on data from calibrated VNA supports the desired efficiency. |
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
