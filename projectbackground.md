@@ -6,6 +6,12 @@ subtitle: Placeholder
 
 In response to Canada’s Space Low Earth Orbit Architecture initiative (SpaceLEO), the University of Victoria Center for Aerospace Research (CfAR) has proposed the implementation and development of PolarLink a single CubeSat with the purpose of aiding research in the artic region. PolarLink requires the development of a communication system consisting of a radio transceiver and one or more patch antennas. Our team has been tasked with the development and initial testing of an S-band patch antenna to facilitate the communication of the CubeSAT with multiple domestic and/or international commercial constellations, as well as several remote terminals across northern Canada. The patch antenna is to transmit and receive signals within the 2-4 GHz frequency range, also known as the S-band.  
 
+## Motivation
+
+Designing an S-band patch antenna for a CubeSat presents a compelling opportunity to apply theoretical knowledge in electromagnetics, RF design, and space systems to a practical, real-world engineering challenge. CubeSats are rapidly transforming space exploration and communication due to their affordability and modularity, and reliable antenna systems are critical to their performance. This project offers the chance to contribute to the advancement of small satellite technology by addressing the unique constraints of space communication such as size, weight, and efficiency, while gaining hands-on experience with modern design tools like HFSS and Altium as well as access to the specialized equipment and tools at CfAR. The interdisciplinary nature of the work, bridging PCB design, RF simulation, and space application, makes it both intellectually rewarding and highly relevant to current industry needs.
+
+Our proposed patch antenna seeks to meet the functionality of current market satellite communication systems at a fraction of the cost, allowing for the development of CubeSats to be further accessible to the wider public. This facilitates the democratization of space by allowing the opportunity for new players to utilize the final frontier instead of being restricted by costs.
+
 ### Project Goals
 
 The S band patch antenna is to meet the electrical and mechanical success criteria outlined in the project’s requirements in the following table. The results of our project will be utilized by CfAR to direct future development of PolarLink’s communication system. 
