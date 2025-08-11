@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Project Background
+subtitle: Introduction
 ---
 
 In response to Canada’s Space Low Earth Orbit Architecture initiative (SpaceLEO), the University of Victoria Center for Aerospace Research (CfAR) has proposed the implementation and development of PolarLink a single CubeSat with the purpose of aiding research in the artic region. PolarLink requires the development of a communication system consisting of a radio transceiver and one or more patch antennas. Our team has been tasked with the development and initial testing of an S-band patch antenna to facilitate the communication of the CubeSAT with multiple domestic and/or international commercial constellations, as well as several remote terminals across northern Canada. The patch antenna is to transmit and receive signals within the 2-4 GHz frequency range, also known as the S-band.  
@@ -36,7 +37,7 @@ The S band patch antenna is to meet the electrical and mechanical success criter
 | **ID**   | **Shall Statement** | **Method of Verification** | **Success Criteria** |
 |------|-----------------|------------------------|------------------|
 | ME-1 | The antenna shall be compatible with the Mechanical Interface Control Document (ICD) in Appendix A. | Fit Check | A 3D STEP model exported from Altium passes a SolidWorks fit check. |
-| ME-2 | The antenna shall comply with NASA guidelines for selecting all non-metallic materials based on available outgassing data [3]. The antenna shall not utilize any non-metallic materials with a Total Mass Loss (TML) greater than 1.0 percent or a Collected Volatile Condensable Material (CVCM) value greater than 0.1 percent. | BOM Review | Review of bill of materials (BOM) shows that there are no parts of concern. |
+| ME-2 | The antenna shall comply with NASA guidelines for selecting all non-metallic materials based on available outgassing data. The antenna shall not utilize any non-metallic materials with a Total Mass Loss (TML) greater than 1.0 percent or a Collected Volatile Condensable Material (CVCM) value greater than 0.1 percent. | BOM Review | Review of bill of materials (BOM) shows that there are no parts of concern. |
 | ME-3 | The antenna weight shall not exceed 100 grams. | Test | Weighing of antenna in its final configuration shows that requirement is met. |
 | ME-4 | The antenna shall comply with the CubeSat standard (see appendix B). | Design Review | Review of design documents shows that the requirement is satisfied. |
 
