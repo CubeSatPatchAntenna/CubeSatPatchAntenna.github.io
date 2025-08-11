@@ -8,13 +8,11 @@ subtitle: Placeholder
 
 The finalized design is a square stacked patch hybrid feed antenna with corner truncation. It features a smaller lower (direct) patch and larger upper (coupled) patch which are proximity-coupled to facilitate a large bandwidth. An airgap which acts as a low-permittivity dielectric between the upper and lower substrate exists to further tune the patch coupling and increase bandwidth. The lower patch is fed directly via the inner conductor of a female SMA connector in alignment with the project requirements. 
 
-{% figure "/assets/img/Model_Isometric.png" Isometric View of Design used for Simulation %}
-{% endfigure %}
+![Isometric View of Design used for Simulation](/assets/img/Model_Isometric.png)
 
 The design consists of separate PCBs for the upper and lower patches which are mechanically distanced from one another by standoffs. The lower patch is contained on a 2-layer PCB. On its top layer is the exposed lower radiating patch while the ground plane forms the bottom copper layer. A through-hole (THT) female SMA connector is mounted on the bottom side of the lower PCB. The THT SMA center conductor feeds through a non-plated through hole in the board and is soldered to the top patch. The ground pins of the SMA are shaved down and soldered to surface pads on the bottom ground plane. The fabricated prototype is shown below in Figure 8.3. 
 
-{% figure "/assets/img/Fab_Isometric.png" Isometric View of Physical Prototype %}
-{% endfigure %}
+![Isometric View of Physical Prototype](/assets/img/Fab_Isometric.png)
 
 ## Key Features
 
