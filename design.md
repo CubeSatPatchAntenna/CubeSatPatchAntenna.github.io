@@ -26,8 +26,7 @@ Differing upper (44.8mm) and lower (33.3mm) patch sizes were selected to enhance
 
 The input impedance of the antenna was controlled by the feed location of the probe within the patch area. Feeding the patch at its center results in a very low impedance (near 0 Ω) since the electric field is weakest and current is maximum, while feeding the patch at its edge results in a large impedance (near open circuit). Additionally, changing the feed location in the x-plane versus y-plane alters the active dominant mode which can assist dual-mode behaviour to achieve circular polarization. An optimal feed location of x = -15mm and y = 2.5mm was selected (see below) to achieve an antenna input impedance of near 50Ω and to increase excitation of the TM010 mode.
 
-{% figure "/assets/img/Fab_Top.png" Lower Patch of Physical Prototype Showing Probe Location %}
-{% endfigure %}
+![Lower Patch of Physical Prototype Showing Probe Location](/assets/img/Fab_Top.png)
 
 ### Large Air Gap
 
