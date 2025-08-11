@@ -4,29 +4,44 @@ title: Project Background
 subtitle: Placeholder
 ---
 
-In response to Canada’s Space Low Earth Orbit Architecture initiative (SpaceLEO), the University of Victoria Center for Aerospace Research (CfAR) has proposed the implementation and development of PolarLink a single CubeSat with the purpose of aiding research in the artic region. PolarLink requires the development of a communication system consisting of a radio transceiver and one or more patch antennas. Our team has been tasked with the development and initial testing of an S-band patch antenna to facilitate the communication of the CubeSAT with multiple domestic and/or international commercial constellations, as well as several remote terminals across northern Canada. The patch antenna is to transmit and receive signals within the 2-4 GHz frequency range, also known as the S-band.  
+## Design Overview
 
-## Motivation
+The finalized design is a square stacked patch hybrid feed antenna with corner truncation. It features a smaller lower (direct) patch and larger upper (coupled) patch which are proximity-coupled to facilitate a large bandwidth. An airgap which acts as a low-permittivity dielectric between the upper and lower substrate exists to further tune the patch coupling and increase bandwidth. The lower patch is fed directly via the inner conductor of a female SMA connector in alignment with the project requirements. 
 
-Designing an S-band patch antenna for a CubeSat presents a compelling opportunity to apply theoretical knowledge in electromagnetics, RF design, and space systems to a practical, real-world engineering challenge. CubeSats are rapidly transforming space exploration and communication due to their affordability and modularity, and reliable antenna systems are critical to their performance. This project offers the chance to contribute to the advancement of small satellite technology by addressing the unique constraints of space communication such as size, weight, and efficiency, while gaining hands-on experience with modern design tools like HFSS and Altium as well as access to the specialized equipment and tools at CfAR. The interdisciplinary nature of the work, bridging PCB design, RF simulation, and space application, makes it both intellectually rewarding and highly relevant to current industry needs.
+{% figure "/assets/img/Model_Isometric.png" Isometric View of Design used for Simulation %}
+{% endfigure %}
 
-Our proposed patch antenna seeks to meet the functionality of current market satellite communication systems at a fraction of the cost, allowing for the development of CubeSats to be further accessible to the wider public. This facilitates the democratization of space by allowing the opportunity for new players to utilize the final frontier instead of being restricted by costs.
+The design consists of separate PCBs for the upper and lower patches which are mechanically distanced from one another by standoffs. The lower patch is contained on a 2-layer PCB. On its top layer is the exposed lower radiating patch while the ground plane forms the bottom copper layer. A through-hole (THT) female SMA connector is mounted on the bottom side of the lower PCB. The THT SMA center conductor feeds through a non-plated through hole in the board and is soldered to the top patch. The ground pins of the SMA are shaved down and soldered to surface pads on the bottom ground plane. The fabricated prototype is shown below in Figure 8.3. 
 
-### Project Goals
+{% figure "/assets/img/Fab_Isometric.png" Isometric View of Physical Prototype %}
+{% endfigure %}
 
-The S band patch antenna is to meet the electrical and mechanical success criteria outlined in the project’s requirements in the following table. The results of our project will be utilized by CfAR to direct future development of PolarLink’s communication system. 
+## Key Features
 
-| **ID**  | **Shall Statement** | **Method of Verification** | **Success Criteria** |
-|--------|---------------------|-----------------------------|-----------------------|
-| EE-1   | The antenna shall be designed for operation in the 2025–2110 MHz and 2200–2290 MHz frequency range. | Test | Requirement EE-5 is verified. |
-| EE-2   | The antenna shall be a passive rectangular or circular patch antenna using printed circuit board (PCB) technology on Rogers 4003C substrate, or an array comprised of such antenna elements. | Design Review | Review of design documents shows that the requirement is satisfied. |
-| EE-3   | The antenna shall be designed to have a nominal input impedance of 50 Ohms over its frequency range of operation in EE-I. | Design Review | Review of design documents shows that the requirement is satisfied. |
-| EE-4   | The antenna electrical interface shall be a single female, SMA type connector located on the side opposite to the radiating element. | Design Review | Review of design documents shows that the requirement is satisfied. |
-| EE-5   | The antenna shall have a VSWR of 1.5:1 or better over its frequency range of operation in EE-I, as measured at the SMA connector. | Test | Measurement with a calibrated VNA indicates the desired VSWR at the connector. |
-| EE-6   | The antenna shall be able to handle at least 5 W of RF power. | Analysis | Theoretical analysis or simulations justify that desired power level is ok (e.g. no excessive dielectric heating, arcing). |
-| EE-7   | The antenna half-power beamwidth (HPBW) shall be at least 60 degrees. | Test | Anechoic chamber measurement with calibrated VNA support the desired HPBW. |
-| EE-8   | The antenna shall be circularly polarized, with the direction of circularity being either left hand circular polarization (LHCP) or right hand circular polarization (RHCP). | Test | Review of design documents shows that the requirement is satisfied. |
-| EE-9   | During production it shall be possible to configure the antenna for LHCP or RHCP, using the same main printed circuit board element. | Design Review | Review of design documents shows that the requirement is satisfied. |
-| EE-10  | The antenna shall have at least 6 dBi gain along its direction of maximum radiation, which shall be aligned with the boresight of the antenna. | Test | Anechoic chamber |
-| EE-11  | The axial ratio of the antenna within its half power beamwidth (HPWB) shall be at most 3 dB. | Analysis | Simulations of the axial ratio indicate that the requirement is met. |
-| EE-12  | The efficiency of the antenna shall be at least 90% or better over its frequency range of operation in EE-I. | Test | Analysis based on data from calibrated VNA supports the desired efficiency. |
+The key features of the design and justification for their implementation in meeting the project constraints are provided in this section:
+
+### Mismatched Direct and Coupled Patch Sizes
+
+Differing upper (44.8mm) and lower (33.3mm) patch sizes were selected to enhance dual-band operation and increase the overall impedance bandwidth. The main factor underlining the center frequency at which a patch antenna operates is its dimensions. Therefore, offsetting the two patch lengths from each other allowed them to target different center frequencies. In the outlined design, the upper patch 11.5mm larger to extend the range of operation to lower frequencies which helped meet the uplink frequency requirement. Oppositely, the lower patch targeted higher frequencies extending the impedance pass band over the downlink transmission frequency range. In the design, a lower return loss was favored in the downlink band to minimize reflection back to the signal generator in the CubeSat. 
+
+### Probe Location Impedance Matching
+
+The input impedance of the antenna was controlled by the feed location of the probe within the patch area. Feeding the patch at its center results in a very low impedance (near 0 Ω) since the electric field is weakest and current is maximum, while feeding the patch at its edge results in a large impedance (near open circuit). Additionally, changing the feed location in the x-plane versus y-plane alters the active dominant mode which can assist dual-mode behaviour to achieve circular polarization. An optimal feed location of x = -15mm and y = 2.5mm was selected (see below) to achieve an antenna input impedance of near 50Ω and to increase excitation of the TM010 mode.
+
+{% figure "/assets/img/Fab_Top.png" Lower Patch of Physical Prototype Showing Probe Location %}
+{% endfigure %}
+
+### Large Air Gap
+
+A large air gap acting as a low permittivity dielectric between the radiating patches was required to achieve the frequency range of operation. The airgap height controlled the electromagnetic coupling strength between the upper and lower patches. Increasing the height weakened the coupling strength and induced shallower return loss over a wider frequency range. Oppositely, decreasing the gap height and thus the coupling strength resulted in dual-band with two distinct S11 troughs or narrow-band operation in the extreme case. A very low return loss resulted in a poor axial ratio as primarily the dominant mode was activated. It was found through HFSS simulation that the optimal airgap height was 12.7mm for achieving the outlined impedance bandwidth and low axial ratio. 
+
+### Corner Truncation
+
+Corner truncation was applied to opposite corners of both the top and bottom patch (See below) acting as the main stimulus for dual orthogonal mode activation to achieve circular polarization. Increasing the truncated area promotes stronger dual-mode behaviour reducing the axial ratio but at the expense of decreased impedance bandwidth and poorer overall return loss. A trade off was made between axial ratio bandwidth and impedance bandwidth, with a lower return loss being prioritized over the frequency range. Through HFSS simulations it was determined that the optimal corner truncation was 20% (of the patch area) for the direct fed patch and 25% for the coupled patch. The direct fed patch showed a greater impact on the return loss when trimming the corners which is why its truncation area was scaled back compared to the top patch.
+
+{% figure "/assets/img/Fab_Top_Patch.png" Top Board of Physical Prototype %}
+{% endfigure %}
+
+### Substrate Material
+
+FR4 was chosen as the antenna substrate for both the upper and lower patches. In the original project constraints, Rogers 4003C substrate was specified to be used as the antenna substrate due to its lower electrical permittivity, low-loss tangent, higher efficiency, and overall greater stability for RF applications. However, as the antenna operating frequency range is relatively low in the microwave realm it was found that the antenna performed similarly with FR4 and Rogers 4003C in HFSS simulations. Therefore, FR4 was selected to decrease the overall antenna cost by a significant factor (10x) and reduce the manufacturing time.
