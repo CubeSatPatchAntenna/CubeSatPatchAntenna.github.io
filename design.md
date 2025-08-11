@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Project Background
-subtitle: Placeholder
+title: Design
+subtitle: Design Overview
 ---
-
-## Design Overview
 
 The finalized design is a square stacked patch hybrid feed antenna with corner truncation. It features a smaller lower (direct) patch and larger upper (coupled) patch which are proximity-coupled to facilitate a large bandwidth. An airgap which acts as a low-permittivity dielectric between the upper and lower substrate exists to further tune the patch coupling and increase bandwidth. The lower patch is fed directly via the inner conductor of a female SMA connector in alignment with the project requirements. 
 
@@ -15,8 +13,6 @@ The design consists of separate PCBs for the upper and lower patches which are m
 ![Isometric View of Physical Prototype](/assets/img/Fab_Isometric.png)
 
 ## Key Features
-
-The key features of the design and justification for their implementation in meeting the project constraints are provided in this section:
 
 ### Mismatched Direct and Coupled Patch Sizes
 
