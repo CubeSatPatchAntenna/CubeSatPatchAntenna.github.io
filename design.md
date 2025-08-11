@@ -36,8 +36,7 @@ A large air gap acting as a low permittivity dielectric between the radiating pa
 
 Corner truncation was applied to opposite corners of both the top and bottom patch (See below) acting as the main stimulus for dual orthogonal mode activation to achieve circular polarization. Increasing the truncated area promotes stronger dual-mode behaviour reducing the axial ratio but at the expense of decreased impedance bandwidth and poorer overall return loss. A trade off was made between axial ratio bandwidth and impedance bandwidth, with a lower return loss being prioritized over the frequency range. Through HFSS simulations it was determined that the optimal corner truncation was 20% (of the patch area) for the direct fed patch and 25% for the coupled patch. The direct fed patch showed a greater impact on the return loss when trimming the corners which is why its truncation area was scaled back compared to the top patch.
 
-{% figure "/assets/img/Fab_Top_Patch.png" Top Board of Physical Prototype %}
-{% endfigure %}
+![Top Board of Physical Prototype](/assets/img/Fab_Top_Patch.png)
 
 ### Substrate Material
 
