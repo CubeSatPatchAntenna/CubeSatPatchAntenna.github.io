@@ -34,6 +34,7 @@ The S band patch antenna is to meet the electrical and mechanical success criter
 | EE-12  | The efficiency of the antenna shall be at least 90% or better over its frequency range of operation in EE-I. | Test | Analysis based on data from calibrated VNA supports the desired efficiency. |
 
 ### Mechanical Specifications
+
 | **ID**   | **Shall Statement** | **Method of Verification** | **Success Criteria** |
 |------|-----------------|------------------------|------------------|
 | ME-1 | The antenna shall be compatible with the Mechanical Interface Control Document (ICD) in Appendix A. | Fit Check | A 3D STEP model exported from Altium passes a SolidWorks fit check. |
