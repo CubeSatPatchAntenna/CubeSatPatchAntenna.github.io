@@ -12,7 +12,9 @@ The finalized design is a square stacked patch hybrid feed antenna with corner t
 
 The design consists of separate PCBs for the upper and lower patches which are mechanically distanced from one another by standoffs. The lower patch is contained on a 2-layer PCB. On its top layer is the exposed lower radiating patch while the ground plane forms the bottom copper layer. A through-hole (THT) female SMA connector is mounted on the bottom side of the lower PCB. The THT SMA center conductor feeds through a non-plated through hole in the board and is soldered to the top patch. The ground pins of the SMA are shaved down and soldered to surface pads on the bottom ground plane. The fabricated prototype is shown below in Figure 8.3. 
 
-![Isometric View of Physical Prototype](/assets/img/Fab_Isometric.png)
+<p align="center">
+  <img src="/assets/img/Fab_Isometric.png" alt="Isometric View of Physical Prototype" />
+</p>
 
 ## Key Features
 
@@ -24,7 +26,9 @@ Differing upper (44.8mm) and lower (33.3mm) patch sizes were selected to enhance
 
 The input impedance of the antenna was controlled by the feed location of the probe within the patch area. Feeding the patch at its center results in a very low impedance (near 0 Ω) since the electric field is weakest and current is maximum, while feeding the patch at its edge results in a large impedance (near open circuit). Additionally, changing the feed location in the x-plane versus y-plane alters the active dominant mode which can assist dual-mode behaviour to achieve circular polarization. An optimal feed location of x = -15mm and y = 2.5mm was selected (see below) to achieve an antenna input impedance of near 50Ω and to increase excitation of the TM010 mode.
 
-![Lower Patch of Physical Prototype Showing Probe Location](/assets/img/Fab_Top.png)
+<p align="center">
+  <img src="/assets/img/Fab_Top.png" alt="Lower Patch of Physical Prototype Showing Probe Location" />
+</p>
 
 ### Large Air Gap
 
@@ -34,7 +38,9 @@ A large air gap acting as a low permittivity dielectric between the radiating pa
 
 Corner truncation was applied to opposite corners of both the top and bottom patch (See below) acting as the main stimulus for dual orthogonal mode activation to achieve circular polarization. Increasing the truncated area promotes stronger dual-mode behaviour reducing the axial ratio but at the expense of decreased impedance bandwidth and poorer overall return loss. A trade off was made between axial ratio bandwidth and impedance bandwidth, with a lower return loss being prioritized over the frequency range. Through HFSS simulations it was determined that the optimal corner truncation was 20% (of the patch area) for the direct fed patch and 25% for the coupled patch. The direct fed patch showed a greater impact on the return loss when trimming the corners which is why its truncation area was scaled back compared to the top patch.
 
-![Top Board of Physical Prototype](/assets/img/Fab_Top_Patch.png)
+<p align="center">
+  <img src="/assets/img/Fab_Top_Patch.png" alt="Top Board of Physical Prototype" />
+</p>
 
 ### Substrate Material
 

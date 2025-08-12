@@ -51,5 +51,8 @@ The performance of the prototype was tested either using HFSS simulations, or th
 ![Polar Gain Plots of Prototype](/assets/img/Polar_Gain_Plots.png)
 
 ### Weight of Prototype ###
-![Weight of Prototype](/assets/img/Weight.png)
+
+<p align="center">
+  <img src="/assets/img/Weight.png" alt="Weight of Prototype" />
+</p>
 
