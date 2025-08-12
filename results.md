@@ -34,3 +34,21 @@ The performance of the prototype was tested either using HFSS simulations, or th
 | 7     | The axial ratio matched the results of the HFSS simulation at the corner frequencies. Matching the results to a curve like that found from the simulations, the average reduces to 3.32 dB. This axial ratio cannot be claimed in full confidence without extensive testing.             |
 | 8     | Efficiency was estimated using the measured S11 parameter. Within the measured band, the efficiency was 90%.                                                                                                                                                                            |
 | 9     | The prototype used nylon for cost savings. For deployment in space, ceramic should be used.                                                                                                                                      |
+### Return Loss and VSWR Plots of Physical Prototype ###
+
+![Return Loss of Prototype](/assets/img/Return_Loss.png)
+
+### Real and Imaginary Parts of Input Impedance of Physical Prototype ###
+
+![Input Impedance of Prototype](/assets/img/Input_Impedance.png)
+
+### Return Loss & Magnitude of Input Impedance of Physical Prototype ###
+
+![Magnitude Impedance of Prototype](/assets/img/Magnitude_Impedance.png)
+
+### Polar Gain Plots of Prototype ###
+![Polar Gain Plots of Prototype](/assets/img/Polar_Gain_Plots.png)
+
+### Weight of Prototype ###
+![Weight of Prototype](/assets/img/Weight.png)
+
