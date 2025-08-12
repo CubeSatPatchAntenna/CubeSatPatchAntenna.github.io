@@ -23,10 +23,10 @@ The performance of the prototype was tested either using HFSS simulations, or th
 | ME-2   | Material Requirements      | Antenna contains nylon which does not meet outgassing requirements | N/A              | No⁹             |
 | ME-3   | Weight                     | 46 g                                          | Scale                          | Yes             |
 
-| Ref # | Notes |
+| Ref # | Notes                                                                                                                                                                                                                                         |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1     | Bandwidth has been shifted down but is 256 MHz wide.                                                                                                                                                                                          |
-| 2     | Across the measured bandwidth, the impedance is an average of 28.6 Ω or a spread of 27.47 ± 16.66 Ω, which is closer to the specifications.                                                                                                  |
+| 2     | Across the measured bandwidth, the impedance is an average of 28.6 Ohm or a spread of 27.47 ± 16.66 Ohm, which is closer to the specifications.                                                                                              |
 | 3     | The measured bandwidth from EE-1 was defined by the −10 dB crossings of the return loss. This corresponds to a VSWR of 1.92 or better within the band.                                                                                        |
 | 4     | Estimated using gain measurements instead of directivity. As such, this is a conservative estimate which will be investigated in more detail in section 9.3.2.                                                                               |
 | 5     | While the actual PCB manufactured is not configurable for LHCP and RHCP, the same design can achieve this requirement by adding another pad for SMA mounting and rotating the position of the SMA connector by 90°.                           |
@@ -34,6 +34,7 @@ The performance of the prototype was tested either using HFSS simulations, or th
 | 7     | The axial ratio matched the results of the HFSS simulation at the corner frequencies. Matching the results to a curve like that found from the simulations, the average reduces to 3.32 dB. This axial ratio cannot be claimed in full confidence without extensive testing. |
 | 8     | Efficiency was estimated using the measured S11 parameter. Within the measured band, the efficiency was 90%.                                                                                                                                   |
 | 9     | The prototype used nylon for cost savings. For deployment in space, ceramic should be used.                                                                                                                                                     |
+
 ### Return Loss and VSWR Plots of Physical Prototype ###
 
 ![Return Loss of Prototype](/assets/img/Return_Loss.png)
