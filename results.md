@@ -23,7 +23,7 @@ The performance of the prototype was tested either using HFSS simulations, or th
 | ME-2   | Material Requirements      | Antenna contains nylon which does not meet outgassing requirements | N/A              | No⁹             |
 | ME-3   | Weight                     | 46 g                                          | Scale                          | Yes             |
 
-| Ref # | Notes                                                                                                                                                                                                                                         |
+| Ref # | Notes |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1     | Bandwidth has been shifted down but is 256 MHz wide.                                                                                                                                                                                          |
 | 2     | Across the measured bandwidth, the impedance is an average of 28.6 Ω or a spread of 27.47 ± 16.66 Ω, which is closer to the specifications.                                                                                                  |
