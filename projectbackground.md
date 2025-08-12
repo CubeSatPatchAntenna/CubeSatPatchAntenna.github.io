@@ -37,11 +37,11 @@ The S band patch antenna is to meet the electrical and mechanical success criter
 
 ### Mechanical Specifications
 
-| **ID**   | **Shall Statement** | **Method of Verification** | **Success Criteria** |
-|------|-----------------|------------------------|------------------|
-| ME-1 | The antenna shall be compatible with the Mechanical Interface Control Document below  | Fit Check | A 3D STEP model exported from Altium passes a SolidWorks fit check. |
-| ME-2 | The antenna shall comply with NASA guidelines for selecting all non-metallic materials based on available outgassing data. The antenna shall not utilize any non-metallic materials with a Total Mass Loss (TML) greater than 1.0 percent or a Collected Volatile Condensable Material (CVCM) value greater than 0.1 percent. | BOM Review | Review of bill of materials (BOM) shows that there are no parts of concern. |
-| ME-3 | The antenna weight shall not exceed 100 grams. | Test | Weighing of antenna in its final configuration shows that requirement is met. |
-| ME-4 | The antenna shall comply with the CubeSat standard. | Design Review | Review of design documents shows that the requirement is satisfied. |
+| **ID**  | **Shall Statement**                                                                                                                                          | **Method of Verification** | **Success Criteria**                                                      |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|--------------------------------------------------------------------------|
+| ME-1    | The antenna shall be compatible with the Mechanical Interface Control Document below.                                                                        | Fit Check                  | A 3D STEP model exported from Altium passes a SolidWorks fit check.      |
+| ME-2    | The antenna shall comply with NASA guidelines for selecting all non-metallic materials based on available outgassing data. The antenna shall not utilize any non-metallic materials with a Total Mass Loss (TML) greater than 1.0 percent or a Collected Volatile Condensable Material (CVCM) value greater than 0.1 percent. | BOM Review                 | Review of bill of materials (BOM) shows that there are no parts of concern. |
+| ME-3    | The antenna weight shall not exceed 100 grams.                                                                                                              | Test                       | Weighing of antenna in its final configuration shows that requirement is met. |
+| ME-4    | The antenna shall comply with the CubeSat standard.                                                                                                         | Design Review              | Review of design documents shows that the requirement is satisfied.      |
 
 ![Mechanical Constraints](/assets/img/Mechanical_Constraints.png)
