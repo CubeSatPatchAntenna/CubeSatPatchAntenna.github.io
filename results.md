@@ -3,7 +3,7 @@ layout: page
 title: Results
 subtitle: Testing & Validation
 ---
-The performance of the prototype was tested either using HFSS simulations, or through use of a VNA in an anechoic chamber. The table below summarizes and compares these results to the specifications found in Table 4.1 through Table 4.3. It should be noted that all results shown are given for the specified bandwidth of 2025 – 2290 MHz. Further clarification for performance outside the specified band is given in the notes section below.
+The performance of the prototype was tested either using HFSS simulations, or through use of a VNA in an anechoic chamber. The table below summarizes and compares these results to the specifications found in the project background. It should be noted that all results shown are given for the specified bandwidth of 2025 – 2290 MHz. Further clarification for performance outside the specified band is given in the notes section below.
 
 | ID     | Parameter                 | Result                                       | Test Method                   | Constraint Met? |
 |--------|---------------------------|-----------------------------------------------|--------------------------------|-----------------|
