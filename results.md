@@ -13,21 +13,21 @@ The table below summarizes and compares these results to the specifications foun
 
 | ID     | Parameter                 | Result                                       | Test Method                   | Constraint Met? |
 |--------|---------------------------|-----------------------------------------------|--------------------------------|-----------------|
-| EE-1   | Bandwidth                  | 1.9229 – 2.1786 GHz                           | VNA                            | No¹             |
-| EE-2   | Substrate Material         | FR-4                                          | N/A                            | Yes             |
-| EE-3   | Input Impedance            | Average: 23.3Ω<br>Spread: 20.54 ±             | VNA                            | No²             |
-| EE-4   | Connector Type             | Female SMA                                    | N/A                            | Yes             |
-| EE-5   | VSWR                       | 5.51 or better                                | VNA                            | No³             |
-| EE-6   | Power                      |                                               |                                |                 |
-| EE-7   | HPBW                       | Average: 83.6°                                | VNA & Anechoic Chamber         | Yes⁴            |
-| EE-8   | Polarization               | Prototype: LHCP                               | HFSS                           | Yes             |
-| EE-9   | Configurable Polarization  | PCB was not made to be configurable           | N/A                            | No⁵             |
-| EE-10  | Gain                       | 6.31 dBi                                      | VNA & Anechoic Chamber         | Yes⁶            |
-| EE-11  | Axial Ratio                | Average: 4.58 dB                              | VNA & Anechoic Chamber         | No⁷             |
-| EE-12  | Efficiency                 | 52%                                           | VNA                            | No⁸             |
-| ME-1   | Size                       | Antenna meets mechanical constraints          | 3D Model Export                | Yes             |
-| ME-2   | Material Requirements      | Antenna contains nylon which does not meet outgassing requirements | N/A              | No⁹             |
-| ME-3   | Weight                     | 46 g                                          | Scale                          | Yes             |
+| EE-<br>1   | Bandwidth                  | 1.9229 – 2.1786 GHz                           | VNA                            | No¹             |
+| EE-<br>2   | Substrate Material         | FR-4                                          | N/A                            | Yes             |
+| EE-<br>3   | Input Impedance            | Average: 23.3Ω<br>Spread: 20.54 ±             | VNA                            | No²             |
+| EE-<br>4   | Connector Type             | Female SMA                                    | N/A                            | Yes             |
+| EE-<br>5   | VSWR                       | 5.51 or better                                | VNA                            | No³             |
+| EE-<br>6   | Power                      |                                               |                                |                 |
+| EE-<br>7   | HPBW                       | Average: 83.6°                                | VNA & Anechoic Chamber         | Yes⁴            |
+| EE-<br>8   | Polarization               | Prototype: LHCP                               | HFSS                           | Yes             |
+| EE-<br>9   | Configurable Polarization  | PCB was not made to be configurable           | N/A                            | No⁵             |
+| EE-<br>10  | Gain                       | 6.31 dBi                                      | VNA & Anechoic Chamber         | Yes⁶            |
+| EE-<br>11  | Axial Ratio                | Average: 4.58 dB                              | VNA & Anechoic Chamber         | No⁷             |
+| EE-<br>12  | Efficiency                 | 52%                                           | VNA                            | No⁸             |
+| ME-<br>1   | Size                       | Antenna meets mechanical constraints          | 3D Model Export                | Yes             |
+| ME-<br>2   | Material Requirements      | Antenna contains nylon which does not meet outgassing requirements | N/A              | No⁹             |
+| ME-<br>3   | Weight                     | 46 g                                          | Scale                          | Yes             |
 
 | Ref # | Notes                                                                                                                                                                                                                                         |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
