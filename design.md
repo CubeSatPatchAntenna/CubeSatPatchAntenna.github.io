@@ -10,7 +10,7 @@ The finalized design is a square stacked patch hybrid feed antenna with corner t
   <img src="/assets/img/Model_Isometric.png" alt="Isometric View of Design used for Simulation" />
 </p>
 
-The design consists of separate PCBs for the upper and lower patches which are mechanically distanced from one another by standoffs. The lower patch is contained on a 2-layer PCB. On its top layer is the exposed lower radiating patch while the ground plane forms the bottom copper layer. A through-hole (THT) female SMA connector is mounted on the bottom side of the lower PCB. The THT SMA center conductor feeds through a non-plated through hole in the board and is soldered to the top patch. The ground pins of the SMA are shaved down and soldered to surface pads on the bottom ground plane. The fabricated prototype is shown below in Figure 8.3. 
+The design consists of separate PCBs for the upper and lower patches which are mechanically distanced from one another by standoffs. The lower patch is contained on a 2-layer PCB. On its top layer is the exposed lower radiating patch while the ground plane forms the bottom copper layer. A through-hole (THT) female SMA connector is mounted on the bottom side of the lower PCB. The THT SMA center conductor feeds through a non-plated through hole in the board and is soldered to the top patch. The ground pins of the SMA are shaved down and soldered to surface pads on the bottom ground plane. The fabricated prototype is shown below. 
 
 <p align="center">
   <img src="/assets/img/Fab_Isometric.png" alt="Isometric View of Physical Prototype" />
