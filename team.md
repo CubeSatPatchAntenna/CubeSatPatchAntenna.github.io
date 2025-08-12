@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About the Team
+title: Project Team
 subtitle: Personnel
 ---
 The S-Band CubeSat Patch Antenna development group consisted of a four-member team with responsibilities divided to utilize each member’s strengths and to maintain an efficient workflow. Duties were assigned at the start of the semester but were adjusted accordingly to meet with demands and delays. All work completed was done under the guidance of UVIC CfAR Space Division Manager Levente Buzas and UVIC Faculty Supervisor Dr. Levi Smith.
