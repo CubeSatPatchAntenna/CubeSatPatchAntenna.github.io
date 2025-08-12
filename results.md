@@ -18,7 +18,7 @@ The table below summarizes and compares these results to the specifications foun
 | EE-<br>3   | Input Impedance            | Average: 23.3Ω<br>Spread: 20.54 ±             | VNA                            | No²             |
 | EE-<br>4   | Connector Type             | Female SMA                                    | N/A                            | Yes             |
 | EE-<br>5   | VSWR                       | 5.51 or better                                | VNA                            | No³             |
-| EE-<br>6   | Power                      |                                               |                                |                 |
+| EE-<br>6   | Power                      | With 5W of RF power, ~22°C of heat is generated                                                |HFSS                                |Yes                 |
 | EE-<br>7   | HPBW                       | Average: 83.6°                                | VNA & Anechoic Chamber         | Yes⁴            |
 | EE-<br>8   | Polarization               | Prototype: LHCP                               | HFSS                           | Yes             |
 | EE-<br>9   | Configurable Polarization  | PCB was not made to be configurable           | N/A                            | No⁵             |
